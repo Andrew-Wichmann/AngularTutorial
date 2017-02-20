@@ -6,11 +6,11 @@
     <link href="css/main.css" rel="stylesheet" />
     
     <!-- Include the AngularJS library -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="js/shared/angular.min.js"></script>
   </head>
   <body ng-app="ForecastApp">
 
-   <div class="main" ng-controller="MainController">
+    <div class="main" ng-controller="MainController">
       <div class="container">
         <div class="row">
           <div class="col-sm-5 col-sm-offset-7">
@@ -21,13 +21,13 @@
 
                 <!-- datetime -->
                 <div class="weekday col-xs-4">
-
+                  <h2>{{ day.datetime | date }}</h2>
                 </div>
 
 
                 <!-- icon -->
                 <div class="weather col-xs-3">
-
+                  <img ng-src={{ day.icon }}>
                 </div>
 
                 <div class="col-xs-1"></div>
@@ -35,14 +35,13 @@
 
                 <!-- high -->
                 <div class="high col-xs-2">
-
-
+                  <h2>{{ day.high }}</h2>
                 </div>
 
 
                 <!-- low -->
                 <div class="low col-xs-2">
-
+                  <h2>{{ day.low }}</h2>
                 </div>
               </div>
             </div>
@@ -62,6 +61,7 @@
     <script src="js/services/forecast.js"></script>
 
     <!-- Directives -->
+
 
   </body>
 </html>
