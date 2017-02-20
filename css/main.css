@@ -7,6 +7,7 @@ body {
 body {
  color: #211f1e ;
  background-image: url(../img/bg.jpg);
+ background-repeat:no-repeat;
  background-size: cover;
  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
